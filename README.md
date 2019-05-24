@@ -1,12 +1,12 @@
 # docker-studio-3t
 
 ### docker build
-- docker build
-- docker run image
-- running the script install sutdio 3t
-- remove install file
-- docker commit image
-- docker push image
+- docker build image `docker build -t studio-3t:2019.2.1 .`
+- docker run image `docker run -e DISPLAY=host.docker.internal:0 -it --name s3t studio-3t:2019.2.1 /bin/bash`
+    - running the script install sutdio 3t
+    - remove install file
+- create a new image from container `docker commit s3t studio-3t:2019.2.1`
+- docker push new image
 
 ### mac
 - brew install socat
