@@ -17,4 +17,4 @@
     - choose `Allow connections from network clients`
 - rebot computer
 - run command `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
-- run command `docker run -e DISPLAY=host.docker.internal:0 -it --name s3t docker pull auho/studio-3t:2019.2.1 /opt/studio3t/Studio-3T`
+- run command `docker run -e DISPLAY=host.docker.internal:0 -it --name s3t auho/studio-3t:2019.2.1 /opt/studio3t/Studio-3T`
