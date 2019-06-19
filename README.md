@@ -1,4 +1,4 @@
-# docker-studio-3t
+# docker-studio3t
 
 ### docker build
 - docker build image `docker build -t studio-3t:2019.2.1 .`
