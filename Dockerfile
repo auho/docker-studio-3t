@@ -13,4 +13,7 @@ RUN apt-get update \
 RUN cd /opt \
     && tar -xf studio-3t-linux-x64.tar.gz
 
-CMD ["/bin/bash"]
+COPY cmd.sh /opt/cmd.sh
+RUN chmod a+x /opt/cmd.sh
+
+CMD ["/opt/cmd.sh"]
